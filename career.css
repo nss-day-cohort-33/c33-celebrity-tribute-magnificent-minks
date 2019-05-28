@@ -1,0 +1,13 @@
+body {
+    display: flex;
+}
+
+.navBar {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+.navBar ul {
+    display: flex;
+    list-style: none;
+}
