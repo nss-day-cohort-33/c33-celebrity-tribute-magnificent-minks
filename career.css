@@ -1,17 +1,6 @@
-/* body {
-    display: flex;
+body {
+    font-size: 150%;
 }
-
-.navBar {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-}
-.navBar ul {
-    display: flex;
-    list-style: none;
-} */
-
 .nb {
     list-style: none;
 }
@@ -32,7 +21,7 @@
 }
 
 html {
-    background: url("img/Frederiksborg_Slot_1814_by_J.C._Dahl.jpg") no-repeat center center fixed;
+    background: url("img/vienna-freyung-with-austria-fountains-rudolf-von-alt.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,6 +29,98 @@ html {
 }
 
 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
     color: yellow;
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+
+/* main navBar for page */
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+display: flex;
+justify-content: space-around;
+flex-flow: column wrap;
+list-style: none;  
+align-items: stretch;
+align-content: space-between;
+flex-grow: 1;
+background-image: url(img/nav-background.jpg);
+background-repeat: no-repeat;
+background-size: 200px 100%;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+/* Fixes nav bar to left side of page  */
+
+.navBar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-size: 30px;
+}
+
+/* centers text in li */
+
+.navBar ul li:not(.scroll) {
+    text-align: center;
+    padding: 0px;
+    display: inline;
+}
+
+/* give the red text color before hover */
+
+.navBar ul li a {
+    text-decoration: none;
+    color: red;
+    margin: 0px;
+    font-weight: bold;
+}
+
+/* add hover effect */
+
+.hover:hover {
+    background-color: black;
+    color: #D17E02;
+}
+
+/* pushes main body so it's not behind nav bar */
+
+main {
+    margin-left: 200px;
+}
+
+h2 {
+    color: yellow;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+
+h3 {
+    color: yellow;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+
+.avStyles {
+    background: rgba(255, 255, 255, 0.75);
+    color: black;
+    display: inline-block;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.75);
+    display: inline-block;
 }
