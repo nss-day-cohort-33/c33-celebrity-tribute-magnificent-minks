@@ -228,6 +228,8 @@ h3 {
 /* edits the h3's for the relationships section */
 
 .peeps h3 {
+    display: flex;
+    justify-content: center;
     color: black;
     text-decoration: underline #DD0000;
 }
@@ -235,8 +237,41 @@ h3 {
 /* edits the dates for the people */
 
 .peeps h5 {
+    display: flex;
+    justify-content: center;
     color: #DD0000;
 }
+
+/* puts img on right side */
+
+.peeps figure {
+    display: flex;
+    justify-content: center;
+}
+
+.peeps div {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+}
+
+.peeps div p {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.size {
+    width: 250px;
+    height: 250px;
+}
+
+.position {
+    display: flex;
+    align-self: auto;
+}
+
+/* Assigns map for birthplace */
 
 .background {
     background-image: url(img/bonn.jpg);
