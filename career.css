@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
 }
 
@@ -10,4 +10,33 @@ body {
 .navBar ul {
     display: flex;
     list-style: none;
+} */
+
+.nb {
+    list-style: none;
 }
+
+.shrinkA {
+    height: 300px;
+    width: 300px;
+}
+
+.shrinkB {
+    height: 300px;
+    width: 230px;
+}
+
+.shrinkC {
+    height: 300px;
+    width: 230px;
+}
+
+html {
+    background: url("img/Frederiksborg_Slot_1814_by_J.C._Dahl.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
