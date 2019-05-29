@@ -83,7 +83,7 @@ margin-bottom: 0px;
 main {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 190px;
+    margin-left: 192px;
 }
 
 /* Don't mess with code above this! ONLY FOR NAVBAR */
@@ -95,7 +95,7 @@ main {
 /* Don't mess with code above this! ONLY FOR NAVBAR */
 
 html {
-    background-color: #FFCE00;
+    background-color: #EBEBEB;
 }
 
 
@@ -106,8 +106,8 @@ h2 {
     justify-content: center;
     margin-left: 75px;
     flex-wrap: wrap;
-    color: #DD0000;
-    text-decoration: underline black;
+    color: black;
+    text-decoration: underline #DD0000;
 }
 
 /* This puts the birth and death sections in a row, not a column  and gives a margin top and bottom*/
@@ -119,7 +119,6 @@ h2 {
     margin-bottom: 20px; 
     justify-content: center;
     margin-left: 75px;
-    background-color: #E7E6F0;
     border-radius: 100%
 }
 
@@ -134,12 +133,14 @@ h2 {
     margin-right: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: #FFCE00;
+    background-color: #EBEBEB;
     
 }
 
+/* birth-death h3's */
+
 article.birth-death {
-    background-color: black;
+    background-color: #FFCE00;
 }
 
 /* centers h3 */
@@ -150,9 +151,10 @@ article.birth-death {
 }
 
 h3 {
-    color: #FFCE00;
-    text-decoration: underline #DD0000;
+    color: #DD0000;
+    text-decoration: underline black;
 }
+
 /* removes list decorations for the birth and death sections and adds flex*/
 
 .birth-death ul li {
@@ -177,8 +179,8 @@ h3 {
 .family-list h3 {
     display: flex;
     justify-content: space-around;
-    color: #DD0000;
-    text-decoration: underline black;
+    color: black;
+    text-decoration: underline #DD0000;
 }
 
 /* puts the relationships list in a row */
@@ -188,7 +190,7 @@ h3 {
     flex-flow: row wrap;
     border: gray inset 2px;
     border-radius: 5px;
-    background-color: #DD0000;
+    background-color: black;
 }
 
 /* takes the list styling off and also adds margin */
@@ -204,15 +206,31 @@ h3 {
 
 .family-list ul li a {
     text-decoration: none;
-    color: black;
+    color: #FFCE00;
 }
 
+/* edits the sections for the people's sections */
 
 .peeps {
-    background-color: black;
+    background-color: #FFCE00;
     padding-left: 5px;
     margin-bottom: 10px; 
-    color: #FFCE00;
+    color: black;
+    border: #DD0000 1px solid;
+    border-radius: 30px
+}
+
+/* edits the h3's for the relationships section */
+
+.peeps h3 {
+    color: black;
+    text-decoration: underline #DD0000;
+}
+
+/* edits the dates for the people */
+
+.peeps h5 {
+    color: #DD0000;
 }
 
 
