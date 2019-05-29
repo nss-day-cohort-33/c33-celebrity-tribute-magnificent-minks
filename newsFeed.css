@@ -1,0 +1,155 @@
+/* this created a static full page background that did not move */
+
+/* html { 
+    background: url(img/conductorwithsymphony.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+
+/* this is the banner image at top of page */
+
+.hero-image {
+    background-image: url("img/conductorwithsymphony.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 400px;
+    
+}
+
+.hero-text {
+    text-align: center;
+}
+
+body {
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 100%; */
+}
+
+h2 {
+    color: red;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    font-size: 45px;
+}
+
+p {
+    font-size: 25px;
+    color: yellow;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+a {
+    font-size: 25px;
+    background-color: white;
+}
+
+h1 {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    text-shadow:
+    -1px -1px 0 yellow,
+    1px -1px 0 yellow,
+    -1px 1px 0 yellow,
+    1px 1px 0 yellow;
+    margin-left: 200px;
+}
+
+h3 {
+    color: white;
+    font-size: 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+display: flex;
+justify-content: space-around;
+flex-flow: column wrap;
+list-style: none;  
+align-items: stretch;
+align-content: space-between;
+flex-grow: 1;
+background-image: url(img/nav-background.jpg);
+background-repeat: no-repeat;
+background-size: 200px 100%;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+/* Fixes nav bar to left side of page  */
+
+.navBar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-size: 30px;
+}
+
+/* centers text in li */
+
+.navBar ul li:not(.scroll) {
+    text-align: center;
+    padding: 0px;
+    display: inline;
+}
+
+/* give the red text color before hover */
+
+.navBar ul li a {
+    text-decoration: none;
+    color: red;
+    margin: 0px;
+    font-weight: bold;
+}
+
+/* add hover effect */
+
+.hover:hover {
+    background-color: black;
+    color: #D17E02;
+}
+
+/* pushes main body so it's not behind nav bar */
+
+main {
+    margin-left: 200px;
+}
+
+
+footer {
+    display: block;
+    
+}
