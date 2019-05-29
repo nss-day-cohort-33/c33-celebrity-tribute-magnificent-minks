@@ -209,6 +209,11 @@ h3 {
     color: #FFCE00;
 }
 
+.family-list ul li a:hover {
+    background: #FFCE00;
+    color: #DD0000;
+}
+
 /* edits the sections for the people's sections */
 
 .peeps {
@@ -233,4 +238,28 @@ h3 {
     color: #DD0000;
 }
 
+.background {
+    background-image: url(img/bonn.jpg);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 
+section.background {
+    display: fixed;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    color: white;
+  }
+
+  section.background p {
+      background-color: black;
+      height: 20px;
+  }
+  
