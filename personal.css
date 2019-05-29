@@ -12,7 +12,9 @@ h1 {
     justify-content: center;
     width: 100%;
     text-align: center;
-    flex-direction: row;
+    flex-direction: row; 
+    margin-left: 100px;
+    flex-wrap: wrap;
 }
 
 /* main navBar for page */
@@ -48,6 +50,8 @@ margin-bottom: 0px;
     left: 0;
     overflow-x: hidden;
     font-size: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 /* centers text in li */
@@ -77,8 +81,185 @@ margin-bottom: 0px;
 /* pushes main body so it's not behind nav bar */
 
 main {
-    margin-left: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 192px;
+}
+
+/* Don't mess with code above this! ONLY FOR NAVBAR */
+/* Don't mess with code above this! ONLY FOR NAVBAR */
+/* Don't mess with code above this! ONLY FOR NAVBAR */
+/* Don't mess with code above this! ONLY FOR NAVBAR */
+/* Don't mess with code above this! ONLY FOR NAVBAR */
+/* Don't mess with code above this! ONLY FOR NAVBAR */
+/* Don't mess with code above this! ONLY FOR NAVBAR */
+
+html {
+    background-color: #EBEBEB;
 }
 
 
+/* This centers the h2 */
 
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: underline #DD0000;
+}
+
+/* This puts the birth and death sections in a row, not a column  and gives a margin top and bottom*/
+
+.birth-death {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    justify-content: center;
+    margin-left: 75px;
+    border-radius: 100%
+}
+
+/* this adds column flex and spacing to birth/death ul */
+
+.birth-death ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-around;
+    justify-content: center;
+    border: black 2px inset;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #EBEBEB;
+    
+}
+
+/* birth-death h3's */
+
+article.birth-death {
+    background-color: #FFCE00;
+}
+
+/* centers h3 */
+
+.birth-death h3 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: #DD0000;
+    text-decoration: underline black;
+}
+
+/* removes list decorations for the birth and death sections and adds flex*/
+
+.birth-death ul li {
+    display: flex;
+    flex-flow:  row wrap;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* centers family ul  and gives margin top/bottom */
+
+.family-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 75px;
+}
+
+/* centers h3 with flex */
+
+.family-list h3 {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    text-decoration: underline #DD0000;
+}
+
+/* puts the relationships list in a row */
+
+.family-list ul {
+    display: flex;
+    flex-flow: row wrap;
+    border: gray inset 2px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+/* takes the list styling off and also adds margin */
+
+.family-list ul li {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+/* removes the family relationships anchor decorations */
+
+.family-list ul li a {
+    text-decoration: none;
+    color: #FFCE00;
+}
+
+.family-list ul li a:hover {
+    background: #FFCE00;
+    color: #DD0000;
+}
+
+/* edits the sections for the people's sections */
+
+.peeps {
+    background-color: #FFCE00;
+    padding-left: 5px;
+    margin-bottom: 10px; 
+    color: black;
+    border: #DD0000 1px solid;
+    border-radius: 30px
+}
+
+/* edits the h3's for the relationships section */
+
+.peeps h3 {
+    color: black;
+    text-decoration: underline #DD0000;
+}
+
+/* edits the dates for the people */
+
+.peeps h5 {
+    color: #DD0000;
+}
+
+.background {
+    background-image: url(img/bonn.jpg);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+section.background {
+    display: fixed;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    color: white;
+  }
+
+  section.background p {
+      background-color: black;
+      height: 20px;
+  }
+  
