@@ -37,6 +37,8 @@ margin-top: 0px;
 margin-bottom: 0px;
 }
 
+/* Fixes nav bar to left side of page  */
+
 .navBar {
     height: 100%;
     width: 200px;
@@ -48,24 +50,31 @@ margin-bottom: 0px;
     font-size: 30px;
 }
 
+/* centers text in li */
+
 .navBar ul li:not(.scroll) {
-    color: #D17E02; 
-    background-color: yellow;
     text-align: center;
     padding: 0px;
     display: inline;
 }
 
+/* give the red text color before hover */
+
 .navBar ul li a {
     text-decoration: none;
     color: red;
     margin: 0px;
+    font-weight: bold;
 }
+
+/* add hover effect */
+
 .hover:hover {
-    background-color: white;
+    background-color: black;
+    color: #D17E02;
 }
 
-
+/* pushes main body so it's not behind nav bar */
 
 main {
     margin-left: 200px;
