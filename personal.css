@@ -1,0 +1,75 @@
+body {
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+/* Centers heading  */
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+}
+
+/* main navBar for page */
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+display: flex;
+justify-content: space-around;
+flex-flow: column wrap;
+list-style: none;  
+align-items: stretch;
+align-content: space-between;
+flex-grow: 1;
+background-image: url(img/nav-background.jpg);
+background-repeat: no-repeat;
+background-size: 200px 100%;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.navBar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-size: 30px;
+}
+
+.navBar ul li:not(.scroll) {
+    color: #D17E02; 
+    background-color: yellow;
+    text-align: center;
+    padding: 0px;
+    display: inline;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: red;
+    margin: 0px;
+}
+.hover:hover {
+    background-color: white;
+}
+
+
+
+main {
+    margin-left: 200px;
+}
+
+
+
