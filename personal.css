@@ -86,6 +86,8 @@ main {
     margin-left: 200px;
 }
 
+
+
 /* Don't mess with code above this! ONLY FOR NAVBAR */
 /* Don't mess with code above this! ONLY FOR NAVBAR */
 /* Don't mess with code above this! ONLY FOR NAVBAR */
@@ -225,7 +227,7 @@ h3 {
     color: black;
     border: #DD0000 1px solid;
     border-radius: 30px;
-    max-width: 1048px;
+    max-width: 782px;
     padding-right: 15px;
 }
 
@@ -301,11 +303,40 @@ section.background {
     height: 400px;
     width: 100%;
     color: white;
-  }
+}
 
-  section.background p {
-      background-color: black;
-      height: 20px;
-  }
+section.background p {
+    background-color: black;
+    height: 20px;
+}
 
-  
+/* footer code */
+
+section.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("img/sheetmusicbackground2.jpg");
+    background-size: cover;
+    min-height: 100px;
+    margin-left: 200px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+footer a {
+    display: flex;
+    width: 100%;
+}
+
+footer a img {
+    height: 50px;
+    width: 50px;
+}
+
