@@ -1,13 +1,149 @@
-body {
+/* Centers heading  */
+
+h1 {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: red;
+    font-size: 50px;
 }
 
+/* main navBar for page */
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+display: flex;
+justify-content: space-around;
+flex-flow: column wrap;
+list-style: none;  
+align-items: stretch;
+align-content: space-between;
+flex-grow: 1;
+background-image: url(img/nav-background.jpg);
+background-repeat: no-repeat;
+background-size: 200px 100%;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+/* Fixes nav bar to left side of page  */
+
 .navBar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-size: 30px;
+}
+
+/* centers text in li */
+
+.navBar ul li:not(.scroll) {
+    text-align: center;
+    padding: 0px;
+    display: inline;
+}
+
+/* give the red text color before hover */
+
+.navBar ul li a {
+    text-decoration: none;
+    color: red;
+    margin: 0px;
+    font-weight: bold;
+}
+
+/* add hover effect */
+
+.hover:hover {
+    background-color: black;
+    color: #D17E02;
+}
+
+/* pushes  body so it's not behind nav bar */
+html {
+    margin-left: 200px;
+    padding: 0; 
+    background: url("https://d27t0qkxhe4r68.cloudfront.net/sm/t/300/ISBN9780757914850.jpg?1549535928");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    /* margin-left: 200px; */
 }
-.navBar ul {
+
+section {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    background: rgba(128, 128, 128, .5);
+    font-size: 18px;
+    /* width: 100%; */
+}
+
+main {
+    /* margin-left: 200px; */
+}
+
+/* adjusting the Main Picture to the center */
+
+.mainPic {
     display: flex;
-    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+    flex-shrink: inherit;
+    opacity: 0.85;
+    
+}
+
+figcaption {
+    font-size: small;
+    align-items: center;
+}
+
+/* changing the border picture radius */
+.bhpic {
+    border-radius: 35%;
+}
+/* needed to reverse row to show picture first */
+.residence {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* covers all the h2 elements */
+h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+footer a{
+    margin: 100px;
 }
