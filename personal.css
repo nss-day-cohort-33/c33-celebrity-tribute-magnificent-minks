@@ -13,7 +13,7 @@ h1 {
     width: 100%;
     text-align: center;
     flex-direction: row; 
-    margin-left: 100px;
+    margin-left: 150px;
     flex-wrap: wrap;
 }
 
@@ -34,7 +34,7 @@ align-content: space-between;
 flex-grow: 1;
 background-image: url(img/nav-background.jpg);
 background-repeat: no-repeat;
-background-size: 160px 100%;
+background-size: 200px 100%;
 margin-top: 0px;
 margin-bottom: 0px;
 }
@@ -66,7 +66,7 @@ margin-bottom: 0px;
 
 .navBar ul li a {
     text-decoration: none;
-    color: red;
+    color: #DD0000;
     margin: 0px;
     font-weight: bold;
 }
@@ -83,7 +83,7 @@ margin-bottom: 0px;
 main {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 160px;
+    margin-left: 200px;
 }
 
 /* Don't mess with code above this! ONLY FOR NAVBAR */
@@ -104,7 +104,7 @@ html {
 h2 {
     display: flex;
     justify-content: center;
-    margin-left: 75px;
+    margin-left: 109px;
     flex-wrap: wrap;
     color: black;
     text-decoration: underline #DD0000;
@@ -118,7 +118,7 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px; 
     justify-content: center;
-    margin-left: 75px;
+    margin-left: 109px;
     border-radius: 100%
 }
 
@@ -181,6 +181,7 @@ h3 {
     justify-content: space-around;
     color: black;
     text-decoration: underline #DD0000;
+    margin-left: 109px;
 }
 
 /* puts the relationships list in a row */
@@ -191,6 +192,7 @@ h3 {
     border: gray inset 2px;
     border-radius: 5px;
     background-color: black;
+    margin-left: 118px;
 }
 
 /* takes the list styling off and also adds margin */
@@ -223,7 +225,7 @@ h3 {
     color: black;
     border: #DD0000 1px solid;
     border-radius: 30px;
-    max-width: 1062px;
+    max-width: 1048px;
     padding-right: 15px;
 }
 
@@ -291,7 +293,7 @@ firstletter {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 75% 50%;
-    margin-left: 75px;
+    margin-left: 84px;
 }
 
 section.background {
