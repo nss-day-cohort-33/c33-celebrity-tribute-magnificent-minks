@@ -1,10 +1,13 @@
 body {
     font-size: 150%;
 }
+
+/* removes bullets from pics */
 .nb {
     list-style: none;
 }
 
+/* following three things shrink pics under work notable works section */
 .shrinkA {
     height: 300px;
     width: 300px;
@@ -20,6 +23,7 @@ body {
     width: 230px;
 }
 
+/* sets pic of painting as background */
 html {
     background: url("img/vienna-freyung-with-austria-fountains-rudolf-von-alt.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -114,6 +118,7 @@ h3 {
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
 }
 
+/* following two things generate translucent text boxes */
 .avStyles {
     background: rgba(255, 255, 255, 0.75);
     color: black;
@@ -123,9 +128,4 @@ h3 {
 footer {
     background: rgba(255, 255, 255, 0.75);
     display: inline-block;
-}
-
-.centerContent {
-    display: flex;
-    justify-content: center;
 }
