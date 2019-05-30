@@ -10,7 +10,7 @@ h1 {
     flex-direction: row;
     margin-left: 0px;
     margin-top: 0px;
-    color: red;
+    color: #DD0000;
     font-size: 50px;
     text-shadow: 2px 2px 5px black;
 }
@@ -71,10 +71,10 @@ margin-bottom: 0px;
 
 .hover:hover {
     background-color: black;
-    color: #D17E02;
+    color: #FFCE00;
 }
 
-/* pushes  body so it's not behind nav bar */
+/* pushes  rest of doc outside of navbar to fit the remainder of the scree and includes the background*/
 html {
     margin-left: 200px;
     margin-right: 2px;
@@ -85,6 +85,7 @@ html {
     background-blend-mode: saturation;
     background-position: center;
 }
+/* makes the body wrap for mobile applications */
 body {
     display: flex;
     flex-flow: column wrap;
@@ -141,15 +142,75 @@ h2 {
     justify-content: flex-start;
     text-decoration-line: underline;
 }
-
+/* covers the paragraphs on the main page */
 p {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
 }
+/* this includes the images sizing for footer */
 
 footer{
     display: flex;
     justify-content: space-around;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("img/sheetmusicbackground2.jpg");
+    /* background-size: cover; */
+    min-height: 100px;
+    margin-left: 200px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    display: flex;
+}
+
+footer a img {
+    height: 50px;
+    width: 50px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?8ap8mh');
+    src:  url('fonts/icomoon.eot?8ap8mh#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?8ap8mh') format('truetype'),
+      url('fonts/icomoon.woff?8ap8mh') format('woff'),
+      url('fonts/icomoon.svg?8ap8mh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-spotify:before {
+    content: "\ea94";
+    font-size: 50px;
+    color: #84bd00;
+    text-decoration: none;
+  }
+  .icon-wikipedia:before {
+    content: "\eac8";
+    font-size: 50px;
+    color: blue;
+  }
