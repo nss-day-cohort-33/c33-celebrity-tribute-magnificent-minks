@@ -1,10 +1,13 @@
 body {
     font-size: 150%;
 }
+
+/* removes bullets from pics */
 .nb {
     list-style: none;
 }
 
+/* following three things shrink pics under work notable works section */
 .shrinkA {
     height: 300px;
     width: 300px;
@@ -20,6 +23,7 @@ body {
     width: 230px;
 }
 
+/* sets pic of painting as background */
 html {
     background: url("img/vienna-freyung-with-austria-fountains-rudolf-von-alt.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -114,18 +118,57 @@ h3 {
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
 }
 
+/* this generates translucent text boxes */
 .avStyles {
     background: rgba(255, 255, 255, 0.75);
     color: black;
     display: inline-block;
 }
 
-footer {
-    background: rgba(255, 255, 255, 0.75);
-    display: inline-block;
+.shrinkD {
+    height: 50px;
+    width: 50px;
 }
 
-.centerContent {
-    display: flex;
-    justify-content: center;
-}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?8ap8mh');
+    src:  url('fonts/icomoon.eot?8ap8mh#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?8ap8mh') format('truetype'),
+      url('fonts/icomoon.woff?8ap8mh') format('woff'),
+      url('fonts/icomoon.svg?8ap8mh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-spotify:before {
+    content: "\ea94";
+    font-size: 50px;
+    color: #84bd00;
+    text-decoration: none;
+  }
+  .icon-wikipedia:before {
+    content: "\eac8";
+    font-size: 50px;
+    color: blue;
+  }
+
+  .footer {
+    background: rgba(255, 255, 255, 0.75);
+    display: inline-block;
+  }
