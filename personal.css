@@ -75,7 +75,7 @@ margin-bottom: 0px;
 
 .hover:hover {
     background-color: black;
-    color: #D17E02;
+    color: #FFCE00;
 }
 
 /* pushes main body so it's not behind nav bar */
@@ -218,11 +218,13 @@ h3 {
 
 .peeps {
     background-color: #FFCE00;
-    padding-left: 5px;
+    padding-left: 10px;
     margin-bottom: 10px; 
     color: black;
     border: #DD0000 1px solid;
     border-radius: 30px;
+    max-width: 820px;
+    padding-right: 15px;
 }
 
 /* edits the h3's for the relationships section */
@@ -289,6 +291,7 @@ firstletter {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 75% 50%;
+    margin-left: 75px;
 }
 
 section.background {
