@@ -10,7 +10,7 @@ h1 {
     flex-direction: row;
     margin-left: 0px;
     margin-top: 0px;
-    color: red;
+    color: #DD0000;
     font-size: 50px;
     text-shadow: 2px 2px 5px black;
 }
@@ -71,10 +71,10 @@ margin-bottom: 0px;
 
 .hover:hover {
     background-color: black;
-    color: #D17E02;
+    color: #FFCE00;
 }
 
-/* pushes  body so it's not behind nav bar */
+/* pushes  rest of doc outside of navbar to fit the remainder of the scree and includes the background*/
 html {
     margin-left: 200px;
     margin-right: 2px;
@@ -85,6 +85,7 @@ html {
     background-blend-mode: saturation;
     background-position: center;
 }
+/* makes the body wrap for mobile applications */
 body {
     display: flex;
     flex-flow: column wrap;
@@ -141,15 +142,37 @@ h2 {
     justify-content: flex-start;
     text-decoration-line: underline;
 }
-
+/* covers the paragraphs on the main page */
 p {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
 }
+/* this includes the images sizing for footer */
 
 footer{
     display: flex;
     justify-content: space-around;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("img/sheetmusicbackground2.jpg");
+    /* background-size: cover; */
+    min-height: 100px;
+    margin-left: 200px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    display: flex;
+}
+
+footer a img {
+    height: 50px;
+    width: 50px;
 }
