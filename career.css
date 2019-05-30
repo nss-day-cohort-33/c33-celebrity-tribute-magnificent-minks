@@ -118,14 +118,15 @@ h3 {
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
 }
 
-/* following two things generate translucent text boxes */
+/* this generates translucent text boxes */
 .avStyles {
     background: rgba(255, 255, 255, 0.75);
     color: black;
     display: inline-block;
 }
 
-footer {
-    background: rgba(255, 255, 255, 0.75);
-    display: inline-block;
+.shrinkD {
+    height: 50px;
+    width: 50px;
 }
+
