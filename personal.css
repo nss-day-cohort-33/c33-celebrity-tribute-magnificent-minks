@@ -34,7 +34,7 @@ align-content: space-between;
 flex-grow: 1;
 background-image: url(img/nav-background.jpg);
 background-repeat: no-repeat;
-background-size: 200px 100%;
+background-size: 160px 100%;
 margin-top: 0px;
 margin-bottom: 0px;
 }
@@ -49,7 +49,7 @@ margin-bottom: 0px;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    font-size: 30px;
+    font-size: 25px;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -75,7 +75,7 @@ margin-bottom: 0px;
 
 .hover:hover {
     background-color: black;
-    color: #D17E02;
+    color: #FFCE00;
 }
 
 /* pushes main body so it's not behind nav bar */
@@ -83,7 +83,7 @@ margin-bottom: 0px;
 main {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 192px;
+    margin-left: 160px;
 }
 
 /* Don't mess with code above this! ONLY FOR NAVBAR */
@@ -95,7 +95,7 @@ main {
 /* Don't mess with code above this! ONLY FOR NAVBAR */
 
 html {
-    background-color: #EBEBEB;
+    background-color: #EBEBEB; 
 }
 
 
@@ -218,16 +218,20 @@ h3 {
 
 .peeps {
     background-color: #FFCE00;
-    padding-left: 5px;
+    padding-left: 10px;
     margin-bottom: 10px; 
     color: black;
     border: #DD0000 1px solid;
-    border-radius: 30px
+    border-radius: 30px;
+    max-width: 1062px;
+    padding-right: 15px;
 }
 
 /* edits the h3's for the relationships section */
 
 .peeps h3 {
+    display: flex;
+    justify-content: center;
     color: black;
     text-decoration: underline #DD0000;
 }
@@ -235,8 +239,49 @@ h3 {
 /* edits the dates for the people */
 
 .peeps h5 {
+    display: flex;
+    justify-content: center;
     color: #DD0000;
+    text-decoration: underline black;
 }
+
+firstletter {
+    color: black;
+}
+
+
+/* puts img on right side */
+
+.peeps figure {
+    display: flex;
+    justify-content: center;
+}
+
+.peeps div {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+}
+
+/* my poor attempt to use flex to keep text on screen */
+
+.peeps div p {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.size {
+    width: 250px;
+    height: 250px;
+}
+
+.position {
+    display: flex;
+    align-self: auto;
+}
+
+/* Assigns map for birthplace */
 
 .background {
     background-image: url(img/bonn.jpg);
@@ -245,13 +290,11 @@ h3 {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 75% 50%;
+    margin-left: 75px;
 }
 
 section.background {
-    display: fixed;
-    justify-content: center;
-    flex-flow: row wrap;
     text-align: center;
     height: 400px;
     width: 100%;
@@ -262,4 +305,5 @@ section.background {
       background-color: black;
       height: 20px;
   }
+
   
