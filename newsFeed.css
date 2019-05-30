@@ -10,6 +10,8 @@
 
 /* this is the banner image at top of page */
 
+
+
 .hero-image {
     background-image: url("img/conductorwithsymphony.jpg");
     height: 100%;
@@ -81,8 +83,8 @@ h1 {
 }
 
 h3 {
-    color: white;
-    font-size: 35px;
+    color: black;
+    font-size: 25px;
 }
 
 nav {
@@ -139,7 +141,7 @@ margin-bottom: 0px;
 
 .hover:hover {
     background-color: black;
-    color: #D17E02;
+    color: #ffce00;
 }
 
 /* pushes main body so it's not behind nav bar */
@@ -149,15 +151,43 @@ main {
 }
 
 
-footer {
-    background-image: url("img/sheetmusicbackground2.jpg");
-    background-size: cover;
-    min-height: 100px;
-    width: 100%;
+.checked {
+    color: orange;
 }
 
+
+/* footer code */
+/* footer code */
+/* footer code */
+/* footer code */
+/* footer code */
+/* footer code */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url("img/sheetmusicbackground2.jpg");
+    min-height: 30px;
+     width: 100%;
+    bottom: 0;
+}
+
+/* .footer footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+} */
+
+
+
 footer a {
-    margin: 100px;
-    
+    display: flex;
+    margin: 75px;
+}
+
+footer a img {
+    height: 90px;
+    width: 90px;
 }
 
